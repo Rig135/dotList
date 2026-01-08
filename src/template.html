@@ -5,10 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dotList</title>
+    
 </head>
 
 <body>
+    <h1>DOTLIST</h1>
+    <h2>tasks</h2>
 
+    <button id="AddTodo">Add Todo</button>
+
+    <dialog id="myDialog">
+        <form method="dialog" id="todoForm">
+        <div>New Todo</div>
+        <hr>
+        <label for="title">Title</label>
+        <input type="text" name="Title" id="title" placeholder="Title" required>
+        <label for="Description">Description</label>
+        <textarea name="Description" id="Description" placeholder="Description"></textarea>
+
+        <label for="DueDate">DueDate</label>
+        <input type="date" id="DueDate" name="DueDate" required>
+
+        <label for="Priority">Priority</label>
+        <select name="Priority" id="Priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <menu>
+            <button value="cancel" type="button" id="cancel">Cancel</button>
+            <button value="submit" id="submit">Add Todo</button>
+        </menu>
+        </form>
+    </dialog>
+
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>
