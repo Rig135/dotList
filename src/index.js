@@ -1,5 +1,10 @@
 import addTodo from "./addTodo.js";
+import renderProjects from "./renderProjects.js";
+import { Project } from "./addProject.js";
+// const todos = [];
 
-const todos = [];
+renderProjects();
+addTodo(Project);
 
-addTodo(todos);
+console.log(Project)
+

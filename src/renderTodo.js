@@ -1,10 +1,10 @@
-export default function renderTodo(todos) {
-  const container = document.querySelector("h2");
+export default function renderTodo(array) {
+  const container = document.querySelector("#displayTodo");
   container.innerHTML = "";
 
-  for (let todo of todos) {
-    const li = document.createElement("li");
-    li.innerHTML = `${todo.title}  <br>  ${todo.description}`;
-    container.appendChild(li);
+  for (let item of array) {
+    const para = document.createElement("para");
+    para.innerHTML = `${item.title}  <br>  ${item.description}`;
+    container.appendChild(para);
   }
 }
