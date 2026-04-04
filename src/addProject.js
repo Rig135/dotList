@@ -1,7 +1,8 @@
 export const Project = {
     default: [],
     gym: [],
-    work: []
+    work: [],
+    // random: []
 };
 
 export default function CreateProjects(name) {

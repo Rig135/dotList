@@ -9,25 +9,127 @@ svg {
   height: 20px;
 }
 
-#projects {
-  background-color: gainsboro;
-  height: 100%;
+
+
+nav {
+  background-color: rgb(128, 205, 231);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+
+#main {
+  /* border: 2px solid red; */
   width: 100%;
+}
+
+#displayTodo {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid gainsboro;
+}
+
+#welcome {
+  /* border: 2px solid black; */
+  height: 40%;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 180px;
 }
 
 #todoForm {
   display: flex;
   flex-direction: column;
+  gap: 12px;
   padding: 10px;
+  font-size: 20px;
+}
+
+#myDialog{
+  width:30%;
+  height: 70%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
 }
 
 #heading {
-  background-color: skyblue;
+  font-size: 30px;
   width: 100%;
 }
 
 #sideBar {
-  background-color: palevioletred;
+  border-right: 1px solid gainsboro;
+  background-color: white;
   width: 25%;
   height: 100vh;
+  padding: 0 1% 0 1%;
 }
+
+#projects {
+  background-color: white;
+  /* height: 100%; */
+  width: 100%;
+  
+}
+
+#AddTodo{
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+}
+
+.projectButtons{
+  background-color: rgb(238, 237, 237);
+  border-radius: 8px;
+  padding: 20px 10px 20px 10px;
+  margin-bottom:15px;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+.projectButtons:hover{
+  background-color: gainsboro;
+
+}
+
+input{
+  height: 25px;
+}
+
+textarea{
+  height: 60px;
+}
+
+select{
+  height: 30px;
+}
+
+#submit{
+  background-color: rgb(128, 205, 231);
+  color: gainsboro;
+}
+
+menu > button{
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+}
+
+menu{
+  padding-left: 0px;
+}
+
+.delButton{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.projectButtons:hover .delButton{
+  background-color: gainsboro;
+  opacity: 1;
+  visibility:visible;
+}
+
