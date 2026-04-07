@@ -34,7 +34,7 @@ export default function addTodo(Project) {
 
     // pushing todo into its Project array
     Project[project.value].push(todo);
-    renderTodo(Project[project.value]);
+    renderTodo(Project[project.value],project.value);
 
     form.reset();
     Modal.close();
