@@ -68,7 +68,44 @@ export default function renderTodo(array,projectName) {
     }
 
     div.appendChild(priority);
+
+    // view todo
+    const view = document.createElement('div');
+    view.textContent = '👁️';
+    view.classList.add('view');
+
+    view.addEventListener('click',()=>{
+      const dialog = document.querySelector('#viewDialog');
+
+      document.querySelector('#viewTitle').textContent = item.title;
+      document.querySelector('#viewDesc').textContent = item.description;
+      document.querySelector('#viewProject').textContent = item.project;
+      document.querySelector('#viewPriority').textContent = item.priority;
+      document.querySelector('#viewDueDate').textContent = item.dueDate;
+      const status = document.querySelector('#viewStatus');
+
     
+      if(item.completed == false){
+        status.textContent = 'Pending';
+      }
+      else{
+        status.textContent = 'Completed';
+      }
+
+
+
+      dialog.showModal();
+
+    })
+
+    div.appendChild(view);
+    
+    //delete Todo
+    const deleteTodo = document.createElement('div');
+    deleteTodo.textContent = '✕';
+
+    div.appendChild(deleteTodo);
+
     container.appendChild(div);
   }
 }

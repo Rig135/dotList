@@ -105,7 +105,7 @@ select{
 
 #submit{
   background-color: rgb(128, 205, 231);
-  color: gainsboro;
+  color: black;
 }
 
 menu > button{
@@ -208,3 +208,59 @@ menu{
   background-color: #f7c76d;
   border-radius: 5px;
 }
+
+#viewDialog{
+  width:25%;
+  height: 65%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.viewText{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(89, 89, 89);
+}
+
+#viewTitle,
+#viewDesc,
+#viewProject,
+#viewPriority,
+#viewDueDate,
+#viewStatus {
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.x{
+  margin-top: 20px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+
+  transition: color 0.2s ease;
+} 
+.x:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.close{
+  background-color: rgb(128, 205, 231);
+  color: black;
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+  margin-left: 80%;
+}
+
+.view:hover{
+  cursor: pointer;
+}
+
+#viewHead{
+  display: flex;
+  justify-content: space-between;
+}
+
