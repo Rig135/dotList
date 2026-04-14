@@ -13,6 +13,14 @@ closeBtns.forEach((btn) => {
   });
 });
 
+const delTodo = document.querySelector('#deleteTodoConfirm')
+const closeDelBtns = document.querySelectorAll('.closeDelTodo');
+
+closeDelBtns.forEach((btn)=>{
+  btn.addEventListener('click',()=>{
+    delTodo.close();
+  })
+})
 
 renderProjects();
 addTodo(Project);

@@ -139,7 +139,7 @@ menu{
   
   display:flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   gap: 15px;
 
   
@@ -211,7 +211,7 @@ menu{
 
 #viewDialog{
   width:25%;
-  height: 65%;
+  height: 68%;
   border: 1px solid gainsboro;
   border-radius: 15px;
   padding: 30px;
@@ -231,6 +231,11 @@ menu{
 #viewStatus {
   font-size: 18px;
   margin-top: 3px;
+}
+
+.closeDelTodo{
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
 }
 
 .x{
@@ -264,3 +269,57 @@ menu{
   justify-content: space-between;
 }
 
+
+.deleteTodo:hover{
+  color: red;
+  cursor: pointer;
+}
+
+
+#deleteTodoConfirm{
+  width:30%;
+  height: 25%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+#deleteTodoHeader > h2{
+  display: inline;
+}
+
+#deleteTodoHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+#deleteTodoConfirm > p{
+  font-size: 18px;
+}
+
+.DeleteTodo{
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+  background-color: rgb(252, 78, 78);
+  color:white;
+  transition: background-color 0.2s ease;
+}
+
+.DeleteTodo:hover{
+  background-color: red;
+}
+
+#buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  padding-top: 10px;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+.completedOpacity{
+  opacity: 0.8;
+}
