@@ -119,6 +119,7 @@ menu{
 
 .delButton{
   opacity: 0;
+  cursor: pointer;
   visibility: hidden;
   transition: opacity 0.3s ease;
 }

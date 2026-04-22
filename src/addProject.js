@@ -2,7 +2,7 @@ export const Project = {
     default: [],
     gym: [],
     work: [],
-    // random: []
+    random: []
 };
 
 export default function CreateProjects(name) {
