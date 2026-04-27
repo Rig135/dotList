@@ -26,7 +26,7 @@ export default function renderProjects() {
         delButton.addEventListener('click',(e)=>{
 
             e.stopPropagation();
-            console.log(`${projectName} is deleted`);
+            // console.log(`${projectName} is deleted`);
             
             delete Project[projectName];
 

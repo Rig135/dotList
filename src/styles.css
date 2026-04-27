@@ -324,3 +324,29 @@ menu{
 .completedOpacity{
   opacity: 0.8;
 }
+
+#addProject{
+  cursor:pointer;
+}
+
+#projectDialog{
+  width: 30%;
+  height: 20%;
+  padding: 40px;
+}
+
+#projectName{
+  width: 80%;
+  margin-top: 15px;
+}
+
+#cancelProject{
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+}
+
+#createProject{
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+  background-color: rgb(128, 205, 231);
+}

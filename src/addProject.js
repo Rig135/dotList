@@ -5,7 +5,7 @@ export const Project = {
     random: []
 };
 
-export default function CreateProjects(name) {
+export  function CreateProjects(name) {
     let currentProject;
     //if Project Exists -> traverse Projects and check if project exists -> if exists => alert(project already there)
     if (Project[name]) {
