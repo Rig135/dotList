@@ -1,11 +1,11 @@
-import path from "node:path";
+const path = require("path");
 
-export default {
+module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "main.js",
-    path: path.resolve(import.meta.dirname, "dist"),
+    path: path.resolve(__dirname, "dist"),
     clean: true,
   },
 };
