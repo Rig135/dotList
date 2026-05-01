@@ -1,0 +1,498 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  background-color:#f8fafc;
+
+  font-family: Inter ,SF Pro , system-ui;
+}
+
+
+svg {
+  height: 20px;
+}
+
+#github > a{
+  color:#3b82f6;
+  text-decoration: none;
+}
+#github{
+  font-weight:400;
+  font-size: 19px;
+}
+#github> svg{
+  fill:#3b82f6;
+}
+
+nav {
+  background-color: #e0edff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 40px;
+  height: 10%;
+}
+
+#main {
+  width: 100%;
+}
+
+#displayTodo {
+  border-top: 2px solid #e5e7eb;
+  padding: 30px;
+}
+
+#welcome {
+  height: 40%;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 180px;
+}
+
+#todoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#myDialog{
+  width: min(90vw, 420px);   
+  max-height: 80vh; 
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 25px;
+
+  overflow-y: auto;
+}
+
+#heading {
+  font-size: 27px;
+  font-weight: 600;
+  width: 100%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#myDialog input{
+  margin-bottom: 15px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#myDialog textarea{
+  padding: 5px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+#myDialog select{
+  margin-bottom: 15px;
+  height: 35px;
+  padding-left:5px;
+}
+
+hr {
+  border: none;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+#myDialog menu{
+  margin-top:5px;
+}
+
+#sideBar {
+  border-right: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  width: 23%;
+  height: 100vh;
+  padding: 0 1% 0 1%;
+}
+
+#projects {
+  background-color: white;
+  width: 100%;
+  
+}
+
+#AddTodo{
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #3b82f6;
+  background-color: #3b82f6;
+  color: #e5e7eb;
+  cursor: pointer;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#plusSVG{
+  fill:#e5e7eb;
+  margin-right: 6px;
+  size: 17px;
+}
+
+#AddTodo:hover{
+  background-color: #2563eb;
+  border-color: #2563eb;
+  
+}
+
+.projectButtons{
+  background-color: rgb(245, 244, 244);
+  border-radius: 8px;
+  padding: 15px 10px 15px 10px;
+  margin-bottom:15px;
+  font-size: 14px;
+  
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items: center;
+
+  transition: all 0.1s ease;
+}
+
+.checkBox{
+  width:20px;
+  height:20px;
+}
+
+.folderDiv{
+  display:flex;
+  gap:12px;
+  align-items: center;
+}
+
+.projectButtons:hover{
+  background-color: #e0edff;
+  color:#3b82f6;
+}
+
+
+#submit{
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  border: 2px solid #3b82f6;
+  color:white;
+}
+#submit:hover{
+  background-color: #2563eb;
+  border-color:#2563eb;
+}
+
+menu > button{
+  padding: 11px 15px 11px 15px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  margin-right:10px;
+}
+
+menu{
+  padding-left: 0px;
+}
+
+.delButton{
+  opacity: 0;
+  cursor: pointer;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  fill:#3b82f6;
+}
+
+.delButton:hover{
+  fill:rgb(255, 47, 47);
+}
+
+.projectButtons:hover .delButton{
+  background-color: #e0edff;
+  opacity: 1;
+  visibility:visible;
+}
+
+.todoBox{
+  height: 65px;
+  border: 1px solid white;
+  margin-bottom: 4%;
+  padding: 20px;
+  border-radius: 13px;
+  transition: border-color 0.1s ease;
+  
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.2s ease;
+}
+
+.todoBox:hover{
+  border-color:#3b82f6;
+  transform: translateY(-2px) ;
+}
+.todoDate{
+  display: flex;
+  align-items: center;
+}
+.todoDate > svg {
+  fill:#3b82f6;
+  width: 25px;
+  height:25px;
+  margin-right: 10px;
+}
+
+.projectName{
+  font-size:20px;
+  font-weight: 600;
+}
+
+.TodoContent{
+  /* border: 1px solid black; */
+  width: 60%;
+  height: 90%;
+  padding: 10px;
+
+  /* flex: 2; */
+}
+
+.TodoContent > p{
+  margin: 1px;
+}
+
+.TodoContent p:nth-child(2){
+  color: rgb(141, 141, 141);
+}
+
+#newProject{
+  display: flex;
+  justify-content: space-between;
+}
+
+#newProject > div {
+  font-size:  25px;
+  padding-top: 18px;
+}
+
+.dueDate{
+  background-color: rgb(237, 236, 236);
+  color: rgb(103, 103, 103);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Low{
+  color: #267800;
+  padding: 5px 8px;
+  background-color: #aad57f;
+  border-radius: 5px;
+}
+
+.High{
+  color: #980000;
+  padding: 5px 8px;
+  background-color: #e79986;
+  border-radius: 5px;
+}
+
+.Medium{
+  color: #c37004;
+  padding: 5px 8px;
+  background-color: #f7c76d;
+  border-radius: 5px;
+}
+
+#viewDialog{
+  width:25%;
+  height: 68%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.viewText{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(89, 89, 89);
+}
+
+#viewTitle,
+#viewDesc,
+#viewProject,
+#viewPriority,
+#viewDueDate,
+#viewStatus {
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.closeDelTodo{
+  padding: 11px 15px 11px 15px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid #e5e7eb;
+}
+
+.x{
+  margin-top: 20px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+
+  transition: color 0.2s ease;
+} 
+.x:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.close{
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  border: 2px solid #3b82f6;
+  color:white;
+  margin-left: 80%;
+  margin-top: 30px;
+}
+
+.view:hover{
+  cursor: pointer;
+}
+
+#viewHead{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+#deleteTodoConfirm{
+  width:30%;
+  height: 25%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+#deleteTodoHeader > h2{
+  display: inline;
+}
+
+#deleteTodoHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+#deleteTodoConfirm > p{
+  font-size: 18px;
+}
+
+.DeleteTodo{
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  border: 2px solid rgb(252, 78, 78);
+  background-color: rgb(252, 78, 78);
+  color:white;
+  transition: background-color 0.2s ease;
+}
+
+.DeleteTodo:hover{
+  background-color: red;
+  cursor: pointer;
+  border-color: red;
+}
+
+
+
+#buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  padding-top: 10px;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+.completedOpacity{
+  opacity: 0.8;
+}
+
+#addProject{
+  cursor:pointer;
+  color:#3b82f6;
+}
+
+#projectDialog{
+  width: 35%;
+  height: 35%;
+  padding: 30px;
+  border:none;
+  border-radius: 15px; 
+  box-sizing: border-box;
+}
+
+#addProjectHead{
+  display: flex;
+  justify-content: space-between;
+}
+
+#addNewProject {
+  display: inline;
+}
+
+#space1{
+  margin-bottom: 20px;
+}
+#space2{
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+#projectName{
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  padding: 8px;
+
+  border-radius: 5px;
+
+  box-sizing: border-box;
+}
+
+
+#cancelProject{
+  padding: 11px 15px 11px 15px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  margin-right:10px;
+}
+
+#createProject{
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  border: 2px solid #3b82f6;
+  color:white;
+}
