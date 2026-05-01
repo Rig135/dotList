@@ -1,5 +1,6 @@
 import addTodo from "./addTodo.js";
 import renderProjects from "./renderProjects.js";
+import { loadProjects } from "./storage.js";
 import { Project, CreateProjects } from "./addProject.js";
 // const todos = [];
 
@@ -68,6 +69,7 @@ closeDelBtns.forEach((btn)=>{
   })
 })
 
+loadProjects();
 renderProjects();
 addTodo(Project);
 

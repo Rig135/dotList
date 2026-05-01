@@ -1,5 +1,6 @@
 import { Project } from "./addProject.js";
 import renderTodo  from "./renderTodo.js";
+import { saveProjects } from "./storage.js";
 
 export default function renderProjects() {
     const container = document.querySelector('#projects');
@@ -33,6 +34,7 @@ export default function renderProjects() {
             // console.log(`${projectName} is deleted`);
             
             delete Project[projectName];
+            saveProjects();
 
             //re-rendering project names
             renderProjects();

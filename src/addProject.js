@@ -1,3 +1,4 @@
+import { saveProjects } from "./storage.js";
 export const Project = {
     default: [],
     gym: [],
@@ -15,6 +16,7 @@ export  function CreateProjects(name) {
 
     //if Project doesnt exist -> create Project
     Project[name] = [];
+    saveProjects();
     currentProject = name;
 
     return currentProject;

@@ -1,5 +1,6 @@
 import List from "./List.js";
 import renderTodo from "./renderTodo.js";
+import { saveProjects } from "./storage.js";
 // import CreateProjects, { Project } from "./addProject.js";
 
 export default function addTodo(Project) {
@@ -34,6 +35,7 @@ export default function addTodo(Project) {
 
     // pushing todo into its Project array
     Project[project.value].push(todo);
+    saveProjects(); //to store data in localStorage
     renderTodo(Project[project.value],project.value);
 
     form.reset();

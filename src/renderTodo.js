@@ -1,4 +1,5 @@
 import { Project } from "./addProject.js";
+import { saveProjects } from "./storage.js";
 
 let currentIndex = null;
 let currentProject = null;
@@ -10,6 +11,7 @@ deleteBtn.addEventListener('click',()=>{
   if(currentIndex!=null && currentProject!=null){
     //remove todo from correct array
     Project[currentProject].splice(currentIndex,1);
+    saveProjects();
 
     renderTodo(Project[currentProject],currentProject);
 
@@ -75,6 +77,7 @@ export default function renderTodo(array,projectName) {
 
     checkBox.addEventListener('change',()=>{
       item.completed = checkBox.checked;
+      saveProjects();
       
       if(item.completed){
 
